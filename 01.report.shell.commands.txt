@@ -1,0 +1,61 @@
+echo hello world
+hello world
+
+echo date
+Fri Jan 17 15:48:36 ICT 2020
+
+echo hostname
+shushichuchi-virtual-machine
+
+echo arch
+x86_64
+
+echo username
+Linux shushichuchi-virtual-machine 4.10.0-28-generic #32~16.04.2-Ubuntu SMP Thu Jul 20 10:19:48 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+
+echo dmesg
+[ 1788.475430] e1000: ens32 NIC Link is Down
+[ 1794.523115] e1000: ens32 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+[ 1919.532399] e1000: ens32 NIC Link is Down
+[ 1925.597038] e1000: ens32 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+[ 1992.121449] e1000: ens32 NIC Link is Down
+[ 1998.172093] e1000: ens32 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+[ 3262.204852] e1000: ens32 NIC Link is Down
+[ 3268.250851] e1000: ens32 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+[ 4723.836808] e1000: ens32 NIC Link is Down
+[ 4729.887637] e1000: ens32 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+
+echo uptime
+ 15:44:54 up  2:36,  1 user,  load average: 0,03, 0,06, 0,03
+
+who am i
+shushichuchi
+
+echo who
+shushichuchi tty7         2020-01-17 11:35 (:0)
+
+echo id
+uid=1000(shushichuchi) gid=1000(shushichuchi) groups=1000(shushichuchi),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),120(lpadmin),121(sambashare)
+
+echo last
+shushich tty7         :0               Fri Jan 17 11:35    gone - no logout
+reboot   system boot  4.10.0-28-generi Fri Jan 17 11:35   still running
+shushich tty7         :0               Fri Jan 17 09:16 - crash  (02:19)
+reboot   system boot  4.10.0-28-generi Fri Jan 17 09:16   still running
+shushich tty7         :0               Thu Jan 16 17:29 - crash  (15:46)
+reboot   system boot  4.10.0-28-generi Thu Jan 16 17:29   still running
+shushich tty7         :0               Thu Jan 16 16:56 - 17:04  (00:07)
+reboot   system boot  4.10.0-28-generi Thu Jan 16 16:56 - 17:04  (00:08)
+shushich tty7         :0               Thu Jan 16 16:51 - down   (00:04)
+reboot   system boot  4.10.0-28-generi Thu Jan 16 16:51 - 16:56  (00:04)
+wtmp begins Thu Jan 16 16:51:35 2020
+
+echo finger
+Login         Name           Tty      Idle  Login Time   Office     Office Phone
+shushichuchi  shushichuchi   tty7     4:12  Jan 17 11:35 (:0)
+
+echo w
+ 15:47:46 up  2:39,  1 user,  load average: 0,00, 0,03, 0,01
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+shushich tty7     :0               11:35    4:12m 33.42s  0.51s /usr/bin/lxsession -s Lubuntu -e LXDE
+

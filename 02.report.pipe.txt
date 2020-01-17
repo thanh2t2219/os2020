@@ -1,0 +1,35 @@
+echo ps aux |grep list
+root        857  0.3  5.4 328816 53912 tty7     Ssl+ 13:14   0:36 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+nobody      886  0.0  0.4  54396  4436 ?        S    13:14   0:00 /usr/sbin/dnsmasq --no-resolv --keep-in-foreground --no-hosts --bind-interfaces --pid-file=/var/run/NetworkManager/dnsmasq.pid --listen-address=127.0.1.1 --cache-size=0 --conf-file=/dev/null --proxy-dnssec --enable-dbus=org.freedesktop.NetworkManager.dnsmasq --conf-dir=/etc/NetworkManager/dnsmasq.d
+shushic+   5054  0.0  0.0  15752   964 pts/0    S+   16:07   0:00 grep --color=auto list
+
+echo wc /etc/passwd
+  33   48 1752 /etc/passwd
+
+echo free
+              total        used        free      shared  buff/cache   available
+Mem:         994900      282832      360584        9820      351484      528896
+Swap:       1046524           0     1046524
+
+echo cat/proc/cpuinfo
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon nopl xtopology tsc_reliable nonstop_tsc pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch fsgsbase tsc_adjust bmi1 avx2 smep bmi2 invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xsaves arat
+bugs		:
+bogomips	: 4416.01
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management:
+
+echo find
+./.git/config
+./.git/info
+./.git/info/exclude
+./.git/COMMIT_EDITMSG
+./.git/HEAD
+./.git/branches
+./.git/description
+./.git/ORIG_HEAD
+./01.report.shell.commands.txt
+./02.report.pipe.txt
