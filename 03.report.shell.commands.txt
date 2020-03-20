@@ -1,0 +1,35 @@
+- ALL RUNNING PROCESSES:
+ps man
+
+   PID TTY      STAT   TIME COMMAND
+   862 tty7     -      0:06 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+     - -        Ssl+   0:04 -
+     - -        Ssl+   0:00 -
+     - -        Ssl+   0:00 -
+     - -        Ssl+   0:01 -
+  1048 tty1     -      0:00 /sbin/agetty --noclear tty1 linux
+     - -        Ss+    0:00 -
+  1756 pts/0    -      0:00 /bin/bash
+     - -        Ss     0:00 -
+  2288 pts/0    -      0:00 ps man
+     - -        R+     0:00 -
+
+- PROCESS ID OF NEWLY-CREATED PROCESS:
+ps aux | grep galculator
+
+shushic+   9977  0.1  3.1 459160 30748 pts/0    Tl   14:57   0:00 galculator
+shushic+  10079  0.0  0.1  15752  1084 pts/0    S+   15:02   0:00 grep --color=auto galculator
+
+- SHOW ITS PROCESS STATUS: 
+ls -l /proc/9977/status
+
+-r--r--r-- 1 shushichuchi shushichuchi 0 Th03 18 14:57 /proc/9977/status
+
+- PAUSE IT:
+kill -STOP 9977
+
+- RESUME IT:
+kill -CONT 9977
+
+- TERMINATE IT:
+kill -KILL 9977

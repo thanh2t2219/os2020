@@ -1,0 +1,64 @@
+FIND PID OF FIREFOX:
+ps aux | grep firefox
+
+shushic+   1868  4.2 25.2 3023560 248580 ?      Sl   08:54   0:36 /usr/lib/firefox/firefox
+shushic+   1935  0.6 14.6 2620004 144696 ?      Sl   08:55   0:05 /usr/lib/firefox/firefox -contentproc -childID 1 -isForBrowser -prefsLen 1 -prefMapSize 207387 -parentBuildID 20200107212822 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 1868 true tab
+shushic+   2004  0.2 10.3 2562188 101548 ?      Sl   08:55   0:02 /usr/lib/firefox/firefox -contentproc -childID 3 -isForBrowser -prefsLen 6202 -prefMapSize 207387 -parentBuildID 20200107212822 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 1868 true tab
+shushic+   2038  0.0  7.6 2536808 75156 ?       Sl   08:55   0:00 /usr/lib/firefox/firefox -contentproc -childID 4 -isForBrowser -prefsLen 6202 -prefMapSize 207387 -parentBuildID 20200107212822 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 1868 true tab
+shushic+   2262  0.0  0.0  15752   928 pts/0    S+   09:09   0:00 grep --color=auto firefox
+
+USE ps with NLWP option:
+ps -o nlwp 1868
+
+NLWP
+  49
+
+COUNT NUMBER OF SUBDIRECTORY:
+ls /proc/1868/tasks
+
+1868
+1880
+1881
+1882
+1883
+1885
+1886
+1889
+1890
+1891
+1893
+1894
+1898
+1899
+1900
+1901
+1902
+1903
+1905
+1906
+1907
+1908
+1932
+1933
+1940
+1943
+1952
+1953
+1960
+1969
+1972
+1973
+1974
+1975
+1976
+2001
+2002
+2007
+2034
+2041
+2049
+2057
+2060
+2062
+2118
+2497
